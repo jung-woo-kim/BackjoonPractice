@@ -2,12 +2,12 @@ public class SelfNumber {
 
     static int d[] = new int [10036];//9999로 생성되는 최댓값이 10035이므로 10036까지 선언
 
-    public static void main(String[] args) {
-        for (int i = 1; i <= 10000; i++) {
-            d[dn(i)] = 1;
-            if (d[i]!=1) System.out.println(i);
-        }
-    }
+//    public static void main(String[] args) {
+//        for (int i = 1; i <= 10000; i++) {
+//            d[dn(i)] = 1;
+//            if (d[i]!=1) System.out.println(i);
+//        }
+//    }
     static int dn(int i){
         int res = i;
         if (i >= 10000) { res += i / 10000; i %= 10000; }
