@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class Zero {
 
-    public static int[] list;
+
     public static Stack<Integer> stack;
 
 
@@ -18,7 +18,7 @@ public class Zero {
 
         int N = Integer.parseInt(br.readLine());
 
-        list = new int[N];
+
 
         for (int i = 0; i < N; i++){
 
