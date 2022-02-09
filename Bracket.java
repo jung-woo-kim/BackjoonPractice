@@ -4,7 +4,7 @@ import java.io.InputStreamReader;
 import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Bracket {
 
     public static Stack<Integer> stack;
     public static String[] line;
