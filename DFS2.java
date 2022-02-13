@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class DFS2 {
 
     public static int[] arr;
     public static boolean[] visit;

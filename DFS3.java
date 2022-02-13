@@ -1,21 +1,31 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
-public class DFS2 {
+public class DFS3 {
 
     public static int[] arr;
     public static boolean[] visit;
+    public static StringBuilder sb;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        Scanner in = new Scanner(System.in);
 
-        int N = in.nextInt();
-        int M = in.nextInt();
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        sb = new StringBuilder();
+        StringTokenizer st = new StringTokenizer(br.readLine()," ");
+
+        int N = Integer.parseInt(st.nextToken());
+        int M = Integer.parseInt(st.nextToken());
 
         arr = new int[M];
         visit = new boolean[N];
 
         dfs(0, N,M,0);
+        System.out.print(sb);
 
     }
 
@@ -23,17 +33,16 @@ public class DFS2 {
 
         if (depth == M) {
             for (int val : arr) {
-                System.out.print(val + " ");
+                sb.append(val).append(" ");
             }
-            System.out.println();
+            sb.append('\n');
             return;
-
         }
 
-        for (int i = start; i < N; i++) {
+        for (int i = 0; i < N; i++) {
 
             arr[depth] = i + 1;
-            dfs(i+1, N, M, depth + 1);
+            dfs(0, N, M, depth + 1);
 
         }
     }
