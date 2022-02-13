@@ -1,3 +1,5 @@
+package dfs;
+
 import java.util.Scanner;
 
 public class DFS2 {
