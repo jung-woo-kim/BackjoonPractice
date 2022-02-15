@@ -1,3 +1,5 @@
+package sort;
+
 import java.util.*;
 
 public class MergeSort {
@@ -42,9 +44,7 @@ public class MergeSort {
                 }
             }
 
-            for (int i=left;i<=right;i++) {
-                src[i]=tmp[i];
-            }
+            if (right + 1 - left >= 0) System.arraycopy(tmp, left, src, left, right + 1 - left);
 
 
 

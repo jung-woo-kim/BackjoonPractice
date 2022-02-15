@@ -1,3 +1,5 @@
+package function;
+
 public class SelfNumber {
 
     static int d[] = new int [10036];//9999로 생성되는 최댓값이 10035이므로 10036까지 선언

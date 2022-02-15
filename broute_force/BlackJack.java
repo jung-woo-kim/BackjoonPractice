@@ -1,3 +1,5 @@
+package broute_force;
+
 import java.util.Scanner;
 
 public class BlackJack {

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Objects;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Simul2490 {
 
     private static int N, M;
 
