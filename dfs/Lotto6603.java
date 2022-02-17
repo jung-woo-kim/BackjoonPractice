@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Objects;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Lotto6603 {
 
     public static int[] arr;
     public static boolean[] visited;

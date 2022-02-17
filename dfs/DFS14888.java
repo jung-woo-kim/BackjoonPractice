@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
-public class Main {
+public class DFS14888 {
 
     public static int MAX = Integer.MIN_VALUE;	// 최댓값
     public static int MIN = Integer.MAX_VALUE;	// 최솟값

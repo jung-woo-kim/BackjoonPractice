@@ -15,7 +15,7 @@ import java.util.Map;
 // 사과 있으면 사과 없어지고 머리 늘려서 꼬리 그대로
 // 사과 없으면 머리 늘려서 꼬리가 위치한 칸 비워줌
 //이 문제의 포인트!! 리스트에 배열을 담을 수 있따!!!!!!!!!!!!!!!!
-public class Main {
+public class Snake3190 {
 
     static int n; // 보드의 크기 (2~100)
     static int k; // 사과의 갯수 (0~100)
