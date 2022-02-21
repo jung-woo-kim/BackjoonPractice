@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Coin11047 {
     static int[] coin;
     static int total;
     public static void main(String[] args) throws IOException {
