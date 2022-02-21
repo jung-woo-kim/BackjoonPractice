@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class MakeOne1463 {
 
     public static Integer[] dp = new Integer[1000001];
 

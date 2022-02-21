@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Bitonic11054 {
 
     static Integer[] r_dp;
     static Integer[] l_dp;

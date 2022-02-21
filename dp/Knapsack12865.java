@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 
-public class Main {
+public class Knapsack12865 {
 
     static Integer[][] dp;
     static int[] W; // weight

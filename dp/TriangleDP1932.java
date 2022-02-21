@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main {
+public class TriangleDP1932 {
 
     public static Integer[][] dp;
     public static Integer[][] list;
