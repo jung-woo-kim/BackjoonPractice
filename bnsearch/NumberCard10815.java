@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class NumberCard10815 {
 
     static int[] list;
     static int[] find;
@@ -59,8 +59,6 @@ public class Main {
 
             if (list[mid] == find[idx]){
                 total[idx]++;
-                BNsearch(low,mid,idx);
-                BNsearch(mid+1,high,idx);
                 return;
             }
             else if (list[mid] > find[idx])
