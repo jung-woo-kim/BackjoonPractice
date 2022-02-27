@@ -38,8 +38,12 @@ public class BOJ9465 {
             dp[0][1] = arr [0][1];
             dp[1][1] = arr [1][1];
 
-            dp[0][2] = arr[1][1] + arr[0][2];
-            dp[1][2] = arr[0][1] + arr[1][2];
+            if (N>1){
+                dp[0][2] = arr[1][1] + arr[0][2];
+                dp[1][2] = arr[0][1] + arr[1][2];
+            }
+
+
 
 
             sb.append(Math.max(recur(N,0),recur(N,1))).append('\n');
