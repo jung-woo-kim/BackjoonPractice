@@ -19,24 +19,27 @@ public class BOJ9465 {
 
         int t = Integer.parseInt(br.readLine());
 
-        for (int k =0; k < t; k++){
-            int N = Integer.parseInt(br.readLine());
+        dp = new Integer[2][100001];
+        arr = new Integer[2][100001];
 
-            arr = new Integer[N+1][2];
-            dp = new Integer[N+1][2];
+        for (int k =0; k < t; k++){
+
+            int N = Integer.parseInt(br.readLine());
 
 
             for (int i = 0; i < 2; i++){
-                st = new StringTokenizer(br.readLine()," ");
+                String[] line = br.readLine().split(" ");
                 for (int j = 1; j <= N; j++){
-                    arr[j][i] = Integer.parseInt(st.nextToken());
+                    arr[i][j] = Integer.parseInt(line[j-1]);
+                    dp[i][j] = null;
                 }
             }
 
-            dp[1][0] = arr [1][0];
+            dp[0][1] = arr [0][1];
             dp[1][1] = arr [1][1];
-            dp[2][0] = arr[1][1] + arr[2][0];
-            dp[2][1] = arr[1][0] + arr[2][1];
+
+            dp[0][2] = arr[1][1] + arr[0][2];
+            dp[1][2] = arr[0][1] + arr[1][2];
 
 
             sb.append(Math.max(recur(N,0),recur(N,1))).append('\n');
@@ -47,15 +50,15 @@ public class BOJ9465 {
     }
 
     static int recur(int n, int val){
-        if (dp[n][val] == null){
+        if (dp[val][n] == null){
             if (val == 0){
-                dp[n][val] = Math.max(recur(n-1,1),Math.max(recur(n-2,0),recur(n-2,1)))+arr[n][val];
+                dp[val][n] = Math.max(recur(n-1,1),Math.max(recur(n-2,0),recur(n-2,1)))+arr[val][n];
             }else{
-                dp[n][val] = Math.max(recur(n-1,0),Math.max(recur(n-2,0),recur(n-2,1)))+arr[n][val];
+                dp[val][n] = Math.max(recur(n-1,0),Math.max(recur(n-2,0),recur(n-2,1)))+arr[val][n];
             }
 
         }
-        return dp[n][val];
+        return dp[val][n];
     }
 
 }
