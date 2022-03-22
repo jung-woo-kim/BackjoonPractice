@@ -4,7 +4,7 @@ import java.awt.*;
 import java.io.*;
 import java.util.*;
 
-public class Main {
+public class BOJ2146 {
     static int N,num=1,answer=987654321;
     static boolean[][] visit;
     static int[][] map;
